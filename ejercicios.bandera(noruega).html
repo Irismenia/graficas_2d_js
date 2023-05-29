@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRAFICOS</title>
+    <style>
+        #miCanvas{
+            background-color: rgba(243, 6, 6, 0.986);
+        }
+    </style>
+</head>
+<body>
+    <h1>Bandera Noruega</h1>
+    <canvas id="miCanvas" width="500px" height="300px">Tu navegador no soporta </canvas>
+    <script>
+        window.onload = function(){
+            var canvas = document.getElementById("miCanvas");
+
+            const BASE = 500;
+            const ALTURA = 300;
+            
+            canvas.width = BASE;
+            canvas.height = ALTURA;
+
+            if(canvas && canvas.getContext){
+                var ctx = canvas.getContext("2d")
+                if (ctx){
+                    //alert("Bienvenido al canvas")
+                    ctx.fillStyle = 'yellow'
+                    ctx.strokeStyle = '#ff0000'
+                    ctx.lineWidth = 5;
+                    
+                    //rectangulo que cubra medio canvas
+                    ctx.fillStyle = 'red';
+                    ctx.fillRect(BASE/2, 0,BASE/2,ALTURA);
+                    canvas
+
+                    ctx.fillStyle =("white");
+                    ctx.fillRect(100,0,90,1500);
+                    ctx.strokeRect(200,50,100,100)
+
+                   ctx.fillStyle = ("white")
+                   ctx.fillRect(0,90,700,100);
+
+                    ctx.fillStyle ="RGB(0, 32, 91)";
+                    ctx.fillRect(110,0,70,1600);
+                    ctx.fillRect(0,100,600,80); 
+
+                }
+                else{
+                    alert("Error al crear el contexto")
+                }
+            }
+
+        }
+    </script>
+</body>
+</html>
