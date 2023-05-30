@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRAFICOS</title>
+    <style>
+        #miCanvas{
+            border:  dotted  blueviolet;
+            background-color: whitesmoke;
+        }
+    </style>
+</head>
+<body>
+    <h1>TRENECITO</h1>
+    <canvas id="miCanvas" width="500px" height="300px">Tu navegador no soporta </canvas>
+    <script>
+        window.onload = function(){
+            var canvas = document.getElementById("miCanvas");
+
+            const BASE = 500;
+            const ALTURA = 300;
+            
+            canvas.width = BASE;
+            canvas.height = ALTURA;
+
+            if(canvas && canvas.getContext){
+                var ctx = canvas.getContext("2d")
+                if (ctx){
+                    //alert("Bienvenido al canvas")
+
+                    
+                    ctx.fillStyle = "lightgreen";
+                    ctx.fillRect(120,140,230,100);
+
+                    ctx.fillStyle = "PINK";
+                    ctx.fillRect(200,45,130,96);
+                    
+                    ctx.fillStyle = "white";
+                    ctx.fillRect(216,65,100,60);
+
+                    ctx.strokeStyle = "black";
+                    ctx.fillStyle = "yellow";
+                    ctx.beginPath();
+                    ctx.lineWidth = 5;
+                    ctx.arc(260,96,29,0, 2*Math.PI,true);
+                    ctx.fill();
+                    ctx.stroke();
+
+                    ctx.strokeStyle = "white";
+                    ctx.fillStyle = "white";
+                    ctx.beginPath();
+                    ctx.lineWidth = 5;
+                    ctx.arc(250,90,5,0, 2*Math.PI,true);
+                    ctx.fill();
+                    ctx.stroke();
+
+                    ctx.strokeStyle = "black";
+                    ctx.fillStyle = "black";
+                    ctx.beginPath();
+                    ctx.lineWidth = 5;
+                    ctx.arc(250,90,2,0, 2*Math.PI,true);
+                    ctx.fill();
+                    ctx.stroke();
+
+                    ctx.strokeStyle = "white";
+                    ctx.fillStyle = "white";
+                    ctx.beginPath();
+                    ctx.lineWidth = 5;
+                    ctx.arc(270,90,5,0, 2*Math.PI,true);
+                    ctx.fill();
+                    ctx.stroke();
+
+                    ctx.strokeStyle = "black";
+                    ctx.fillStyle = "black";
+                    ctx.beginPath();
+                    ctx.lineWidth = 5;
+                    ctx.arc(270,90,2,0, 2*Math.PI,true);
+                    ctx.fill();
+                    ctx.stroke();
+
+                    ctx.strokeStyle = "brown";
+                    ctx.fillStyle = "brown";
+                    ctx.beginPath();
+                    ctx.lineWidth = 5;
+                    ctx.arc(260,110,7,0, 2*Math.PI,true);
+                    ctx.fill();
+                    ctx.stroke();
+
+                   
+                    ctx.fillStyle = "yellow";
+                    ctx.fillRect(188,17,160,30);
+
+                    ctx.fillStyle = "yellow";
+                    ctx.fillRect(198,0,140,30);
+
+                    ctx.fillStyle = "purple";
+                    ctx.fillRect(100,155,20,70);
+
+                    ctx.fillStyle = "purple";
+                    ctx.fillRect(80,145,30,90);
+
+                    ctx.fillStyle = "yellow";
+                    ctx.fillRect(140,102,38,38);
+
+                    ctx.fillStyle = "gray";
+                    ctx.fillRect(135,102,50,16);
+
+                    ctx.strokeStyle = "gray";
+                    ctx.fillStyle = "gray";
+                    ctx.beginPath();
+                    ctx.lineWidth = 5;
+                    ctx.arc(168,86,9,0, 2*Math.PI,true);
+                    ctx.fill();
+                    ctx.stroke();
+
+                    ctx.strokeStyle = "gray";
+                    ctx.fillStyle = "gray";
+                    ctx.beginPath();
+                    ctx.lineWidth = 5;
+                    ctx.arc(148,68,9,0, 2*Math.PI,true);
+                    ctx.fill();
+                    ctx.stroke();
+
+                    ctx.strokeStyle = "gray";
+                    ctx.fillStyle = "gray";
+                    ctx.beginPath();
+                    ctx.lineWidth = 5;
+                    ctx.arc(170,48,9,0, 2*Math.PI,true);
+                    ctx.fill();
+                    ctx.stroke();
+
+                    ctx.strokeStyle = "gray";
+                    ctx.fillStyle = "gray";
+                    ctx.beginPath();
+                    ctx.lineWidth = 5;
+                    ctx.arc(148,28,9,0, 2*Math.PI,true);
+                    ctx.fill();
+                    ctx.stroke();
+
+                    //rparte de adelante
+                    ctx.strokeStyle = "pink";
+                    ctx.fillStyle = "pink";
+                    ctx.beginPath();
+                    ctx.lineWidth = 5;
+                    ctx.arc(80,189,29,1.5*Math.PI, Math.PI/2,true);
+                    ctx.fill();
+                    ctx.stroke();
+
+                    //Rueda primera
+
+                    ctx.fillStyle = "black";
+                    ctx.fillRect(190,230,90,16);
+
+                    ctx.strokeStyle = "black";
+                    ctx.fillStyle = "gray";
+                    ctx.beginPath();
+                    ctx.lineWidth = 5;
+                    ctx.arc(170,239,29,0, 2*Math.PI,true);
+                    ctx.fill();
+                    ctx.stroke();
+                    
+
+                    ctx.fillStyle = "gray";
+                    ctx.beginPath();
+                    ctx.lineWidth = 5;
+                    ctx.arc(170,239,10,0, 2*Math.PI,true);
+                    ctx.fill();
+                    ctx.stroke();
+
+
+
+                    //RUEDA SEGUNDA
+
+                    ctx.strokeStyle = "black";
+                    ctx.fillStyle = "gray";
+                    ctx.beginPath();
+                    ctx.lineWidth = 5;
+                    ctx.arc(240,239,29,0, 2*Math.PI,true);
+                    ctx.fill();
+                    ctx.stroke();
+
+                    ctx.fillStyle = "gray";
+                    ctx.beginPath();
+                    ctx.lineWidth = 5;
+                    ctx.arc(240,239,10,0, 2*Math.PI,true);
+                    ctx.fill();
+                    ctx.stroke();
+
+                    //rueda tercera
+
+                    ctx.strokeStyle = "black";
+                    ctx.fillStyle = "gray";
+                    ctx.beginPath();
+                    ctx.lineWidth = 5;
+                    ctx.arc(310,239,29,0, 2*Math.PI,true);
+                    ctx.fill();
+                    ctx.stroke();
+
+                    ctx.fillStyle = "gray";
+                    ctx.beginPath();
+                    ctx.lineWidth = 5;
+                    ctx.arc(310,239,10,0, 2*Math.PI,true);
+                    ctx.fill();
+                    ctx.stroke();
+
+                    if (ctx){
+                    ctx.font = "2en verdana";
+                    ctx.lineWidth = 1.0;
+                    ctx.fillStyle = "WHITE";
+                    ctx.strokeStyle = "WHITE";
+                    //
+                    ctx.shadowColor= "black";
+                    ctx.shadowOffsetX = 5;
+                    ctx.shadowOffsetY = 5; 
+                    ctx.shadowBlur = 10;
+                    //
+                    ctx.fillText("ALVIAREZ ALVIAREZ IRISMENIA", BASE/3, ALTURA/1.6);
+                    ctx.strokeText("ALVIAREZ ALVIAREZ IRISMENIA", BASE/3, ALTURA/1.6);
+                    
+                    
+                    
+                    
+                }
+                }
+                else{
+                    alert("Error al crear el contexto")
+                }
+            }
+
+        }
+    </script>
+</body>
+</html>
